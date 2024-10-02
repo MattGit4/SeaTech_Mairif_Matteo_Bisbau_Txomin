@@ -1,0 +1,7 @@
+6573 1727863833732 XXXX 1727863833732, Thread 6573: Send Abort Script Engine Command 
+6573 1727863833732 XXXX 1727863833732, Thread 6573: XXXX 1727863833732, Entering Thread 6573: ToolCommUsb::killScriptEngine  
+6573 1727863833732 XXXX 1727863833732, Thread 6573: com.Send returned false 
+6573 1727863833732 XXXX 1727863833732, Thread 6573: Failed sending Abort Script Engine Command. Set nuclear option = true 
+6573 1727863833732 XXXX 1727863833732, Thread 6573: About to nuke 
+6573 1727863833732 XXXX 1727863833732, Thread 6573: XXXX 1727863833732, Entering Thread 6573: ToolCommUsb::nuclearOption  
+6573 1727863833733 XXXX 1727863833733, Thread 6573: com.Send returned false 
