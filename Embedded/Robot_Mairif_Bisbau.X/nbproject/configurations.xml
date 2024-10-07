@@ -9,6 +9,8 @@
       <itemPath>timer.h</itemPath>
       <itemPath>robot.h</itemPath>
       <itemPath>ToolBox.h</itemPath>
+      <itemPath>PWM.h</itemPath>
+      <itemPath>ADC.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -28,6 +30,8 @@
       <itemPath>timer.c</itemPath>
       <itemPath>robot.c</itemPath>
       <itemPath>ToolBox.c</itemPath>
+      <itemPath>PWM.c</itemPath>
+      <itemPath>ADC.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

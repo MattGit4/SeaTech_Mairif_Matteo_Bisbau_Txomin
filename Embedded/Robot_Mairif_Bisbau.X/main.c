@@ -4,6 +4,7 @@
 #include "ChipConfig.h"
 #include "IO.h"
 #include "timer.h"
+#include "PWM.h" 
 
 int main (void){
     /***********************************************************************************************/
@@ -15,9 +16,12 @@ int main (void){
      // Configuration des input et output (IO)
     /***********************************************************************************************/
     InitIO();
-    
     InitTimer1();
     InitTimer23();
+    InitPWM();
+    InitADC1();
+  
+    
     
     LED_BLANCHE_1 = 1;
     LED_BLEUE_1 = 1;
@@ -31,6 +35,7 @@ int main (void){
     LED_ORANGE_2 = 1;
     LED_ROUGE_2 = 1;
     LED_VERTE_2 = 1;
+    
     /***********************************************************************************************/
     // Boucle Principale
     /***********************************************************************************************/
@@ -39,5 +44,4 @@ int main (void){
         LED_VERTE_1 = !LED_VERTE_1;
     } 
     // fin main
-   
 }
