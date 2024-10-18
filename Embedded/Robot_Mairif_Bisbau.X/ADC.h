@@ -10,6 +10,8 @@
 void InitADC1(void);
 void ADC1StartConversionSequence();
 void ADCClearConversionFinishedFlag(void);
+void ADCClearConversionFinished();
+
 
 #endif	/* ADC_H */
 
