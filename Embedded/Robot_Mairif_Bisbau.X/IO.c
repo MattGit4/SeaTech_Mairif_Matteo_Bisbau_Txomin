@@ -33,13 +33,10 @@ void InitIO()
     _TRISA9 = 0; // LED Bleue 
     _TRISA10 = 0; // LED Rouge
     _TRISH3 = 0; // LED Verte 
+        
+    // Configuration des entrées    
+    _RH1 = 0; // Button
     
-    
-    //****** Moteurs ************************
-
-    // Configuration des entrées
-    
-
     /****************************************************************************************************/
     // Gestion des pin remappables
     /****************************************************************************************************/

@@ -27,5 +27,7 @@ void InitIO();
 void LockIO();
 void UnlockIO();
 
+//BUTTON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#define BUTTON _RH1
 #endif /* IO_H */
 
