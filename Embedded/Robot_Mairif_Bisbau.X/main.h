@@ -28,6 +28,7 @@
 #define STATE_TOURNE_L_DROITE_EN_COURS 18
 #define STATE_TOURNE_L_GAUCHE_EN_COURS 19
 #define STATE_OUT_TIME 20
+#define STATE_BLC 21
 #define PAS_D_OBSTACLE 0
 #define OBSTACLE_A_GAUCHE 1
 #define OBSTACLE_A_DROITE 2
@@ -37,6 +38,7 @@
 #define OBSTACLE_L_DROITE 6
 #define OBSTACLE_L_GAUCHE 7
 #define OBSTACLE_TIME 8
+#define SOS 9
 
 void OperatingSystemLoop(void);
 void SetNextRobotStateInAutomaticMode();
