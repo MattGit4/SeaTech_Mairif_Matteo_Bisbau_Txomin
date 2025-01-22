@@ -8,7 +8,9 @@
 #include "robot.h"
 #include "main.h"
 #include "ADC.h"
-
+#include "UART.h"
+#include <libpic30.h>
+#include "CB_TX1.h"
 
 int ADCValue0;
 int ADCValue1;
@@ -33,6 +35,7 @@ int main(void) {
     InitTimer4();
     InitPWM();
     InitADC1();
+    InitUART();
 
 
     LED_BLANCHE_1 = 0;
@@ -107,6 +110,8 @@ int main(void) {
                 LED_VERTE_2 = 0;
             }*/
         }
+        SendMessageDirect((unsigned char*) "Salut", 5);
+        __delay32(40000000);
     }
     // fin main
 }
