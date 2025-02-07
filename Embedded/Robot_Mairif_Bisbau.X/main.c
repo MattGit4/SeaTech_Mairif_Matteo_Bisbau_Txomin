@@ -11,6 +11,7 @@
 #include "UART.h"
 #include <libpic30.h>
 #include "CB_TX1.h"
+#include "CB_RX1.h"
 
 int ADCValue0;
 int ADCValue1;
@@ -110,8 +111,15 @@ int main(void) {
                 LED_VERTE_2 = 0;
             }*/
         }
-        SendMessageDirect((unsigned char*) "Salut", 5);
-        __delay32(40000000);
+        //SendMessageDirect((unsigned char*) "Salut", 5);
+        //__delay32(40000000);
+        int i;
+        for(i=0; i< CB_RX1_GetDataSize(); i++)
+        {
+            unsigned char c = CB_RX1_Get();
+            SendMessage(&c,1);
+        }
+        __delay32(1000);
     }
     // fin main
 }
